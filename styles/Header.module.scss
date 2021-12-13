@@ -1,0 +1,66 @@
+.header {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 2rem;
+  color: gray;
+}
+
+.searchbar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #171717;
+
+  .searchbarIcon {
+    margin-right: 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .contrastMode {
+    margin: 0 1rem;
+    background-color: #171717;
+    color: white;
+  }
+
+  .signUp {
+    width: 125px;
+    background-color: #52ffc3;
+  }
+}
