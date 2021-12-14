@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Image from "next/image";
 import styles from "../styles/Card.module.scss";
 import authorImage from "../public/placeholders/author.png";
-import wethLogo from "../public/weth.png";
+import ethLogo from "../public/eth.png";
 
 class Card extends Component {
     render() {
@@ -10,16 +10,18 @@ class Card extends Component {
             <div className={styles.card}>
                 <div>
                     <span className={styles.name}>Card name</span>
-                    <div className={[styles.author, styles.metadata].join(" ")}>
-                        <div className={styles.authorImage}>
-                            <Image src={authorImage} layout={"responsive"}/>
+                    <div className={[styles.author, styles.info].join(" ")}>
+                        <div className={[styles.authorImage, styles.infoImage].join(" ")}>
+                            <Image src={authorImage} layout={"fill"} objectFit={"contain"}/>
                         </div>
                         <span>@author</span>
                     </div>
                 </div>
                 <div>
-                    <div className={[styles.price, styles.metadata].join(" ")}>
-                        <Image src={wethLogo}/>
+                    <div className={[styles.price, styles.info].join(" ")}>
+                        <div className={styles.infoImage}>
+                            <Image src={ethLogo} layout={"fill"} objectFit={"contain"}/>
+                        </div>
                         <span>amount</span>
                     </div>
                 </div>

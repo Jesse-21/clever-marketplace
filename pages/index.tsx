@@ -6,6 +6,7 @@ const Explore: NextPage = () => {
     return (
         <div className={styles.explore}>
             <Card/>
+            <Card/>
         </div>
     )
 }
