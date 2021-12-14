@@ -1,8 +1,13 @@
-import type {NextPage} from 'next'
-import Header from "../components/Header";
+import type {NextPage} from 'next';
+import styles from "../styles/Explore.module.scss";
+import Card from "../components/Card";
 
-const Home: NextPage = () => {
-  return <Header/>
+const Explore: NextPage = () => {
+    return (
+        <div className={styles.explore}>
+            <Card/>
+        </div>
+    )
 }
 
-export default Home
+export default Explore

@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   grid-gap: 2rem;
-  color: gray;
+  color: #484848;
+  margin-bottom: 5rem;
 }
 
 .searchbar {
@@ -13,8 +14,14 @@
   align-items: center;
   margin: 1rem 0;
   padding: 15px;
+  border: 1px solid transparent;
   border-radius: 50px;
   background-color: #171717;
+  transition: border-color 0.25s;
+
+  &:focus-within {
+    border-color: #52ffc3;
+  }
 
   .searchbarIcon {
     margin-right: 0.5rem;
@@ -39,6 +46,16 @@
   align-items: center;
   grid-gap: 1rem;
 
+  a.active {
+    color: white;
+    font-weight: 500;
+  }
+
+  a:hover,
+  button:hover {
+    cursor: pointer;
+  }
+
   button {
     display: flex;
     align-items: center;
@@ -47,10 +64,6 @@
     border: none;
     border-radius: 50px;
     outline: none;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   .contrastMode {

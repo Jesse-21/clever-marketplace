@@ -1,0 +1,29 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: #171717;
+  color: white;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.metadata {
+  display: flex;
+}
+
+.author {
+  align-items: center;
+  height: 25px;
+}
+
+.authorImage {
+  height: 100%;
+}

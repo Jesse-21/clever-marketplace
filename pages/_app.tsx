@@ -1,6 +1,7 @@
-import '../styles/globals.scss'
-import type {AppProps} from 'next/app'
+import '../styles/globals.scss';
+import type {AppProps} from 'next/app';
 import Head from "next/head";
+import Header from "../components/Header";
 
 function App({Component, pageProps}: AppProps) {
     return (
@@ -8,6 +9,7 @@ function App({Component, pageProps}: AppProps) {
             <Head>
                 <title>Clever Marketplace</title>
             </Head>
+            <Header/>
             <Component {...pageProps} />
         </>
     )
