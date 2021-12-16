@@ -1,0 +1,6 @@
+{
+  "thirdweb": {
+    "provider": "https://rpc-mumbai.maticvigil.com",
+    "module": "0xa8523C757712105FE2839e905841e645f0f6F7E0"
+  }
+}

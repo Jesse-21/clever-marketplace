@@ -1,9 +1,0 @@
-{
-  "wallet": {
-    "privateKey": "<WALLET_PRIVATE_KEY>"
-  },
-  "thirdweb": {
-    "provider": "<NETWORK_RPC_URL>",
-    "module": "<MARKETPLACE_ADDRESS>"
-  }
-}
